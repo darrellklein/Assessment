@@ -5,6 +5,9 @@ const addContacts = () => {
         let newContact = document.createElement('div');
         newContact.className = 'contacts-list--item';
         contactList.appendChild(newContact);
+        let newStatus = document.createElement('span');
+        newStatus.classList = 'contact-status';
+        newContact.appendChild(newStatus);
         let newName = document.createElement('div');
         newName.classList = 'contact-name';
         newName.textContent = contact.name;
