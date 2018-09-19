@@ -41,7 +41,6 @@ html, body {
     font-size: 0.9em;
     display: flex;
     flex-flow: row nowrap;
-
 }
 
 .contact-name {
@@ -68,6 +67,7 @@ html, body {
     display: flex;
     align-items: center;
     border-left: 1px solid black;
+    padding-left: 2%;
 }
 
 
