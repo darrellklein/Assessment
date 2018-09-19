@@ -28,20 +28,30 @@ html, body {
     height: 14.285%;
     box-shadow: 0 -1px 0 #000;
     color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.contact-status {
+    height: 60%;
+    width: 20%;
+    border-radius: 50%;
+    background-color: green;
 }
 
 .contact-name {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 40%;
     height: 100%;
-    float: left;
 }
 
 .contact-info {
-    display: inline-block;
     height: 100%;
     width: 60%;
-    float: right;
+    display: flex;
+    align-items: center;
 }
 
 #contacts-footer {

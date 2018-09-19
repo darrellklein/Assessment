@@ -1,3 +1,22 @@
+const contactList = document.getElementById('contacts-list');
+
+const addContacts = () => {
+    contacts.forEach(function(contact){
+        let newContact = document.createElement('div');
+        newContact.className = 'contacts-list--item';
+        contactList.appendChild(newContact);
+        let newName = document.createElement('div');
+        newName.classList = 'contact-name';
+        newName.textContent = contact.name;
+        newContact.appendChild(newName);
+        let newInfo = document.createElement('div');
+        newInfo.classList = 'contact-info';
+        newInfo.textContent = contact.email;
+        newContact.appendChild(newInfo);       
+    }, contacts)
+}
+
+//Mock data to play with functionality and test
 const contacts = [
     {
         name: 'Jimmie',
@@ -43,21 +62,4 @@ const contacts = [
     }
 ];
 
-const contactList = document.getElementById('contacts-list');
-const contactslen = contacts.length;
-
-const addContacts = () => {
-    contacts.forEach(function(contact){
-        let newContact = document.createElement('div');
-        newContact.className = 'contacts-list--item';
-        contactList.appendChild(newContact);
-        let newName = document.createElement('div');
-        newName.classList = 'contact-name';
-        newName.textContent = contact.name;
-        newContact.appendChild(newName);
-        let newInfo = document.createElement('div');
-        newInfo.classList = 'contact-info';
-        newInfo.textContent = contact.email;
-        newContact.appendChild(newInfo);       
-    }, contacts)
-}
+addContacts();
